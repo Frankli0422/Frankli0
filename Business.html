@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Global News Daily - Business</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /* Use same styles as index.html */
+        body { font-family: Arial, sans-serif; margin:0; background:#fafafa; }
+        header { background: #223366; color: white; padding: 1rem 2rem; }
+        nav { margin-top: 1rem; }
+        nav a { color: #fff; margin: 0 1rem; text-decoration: none; font-weight: bold; }
+        nav a.active { text-decoration: underline; }
+        .container { max-width: 950px; margin: 2rem auto; background:white; padding:2rem; box-shadow:0 1px 7px rgba(0,0,0,0.07);}
+        .main-title { margin-top:0; }
+        .news-grid { display: grid; grid-template-columns: repeat(auto-fill,minmax(280px,1fr)); gap:2rem; }
+        .article { border:1px solid #ddd; border-radius:5px; padding:1rem; background:#f6f6ff; }
+        .article h2 { font-size: 1.2rem; margin-top:0; }
+        .article small { color: #444; }
+        footer { background: #223366; color: #ddd; text-align: center; padding: 1rem 2rem; margin-top: 2rem; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Global News Daily</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="world.html">World</a>
+            <a href="politics.html">Politics</a>
+            <a href="business.html" class="active">Business</a>
+            <a href="tech.html">Tech</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <div class="container">
+        <h2 class="main-title">Business News</h2>
+        <div class="news-grid">
+            <div class="article">
+                <h2>Major Merger in Tech Industry</h2>
+                <small>By Sophia Kim | April 5, 2024</small>
+                <p>Two leading tech firms announce a $10 billion merger to expand their global influence.</p>
+                <a href="#">Read more...</a>
+            </div>
+            <div class="article">
+                <h2>Startups Attract Record Investments</h2>
+                <small>By Raj Patel | April 4, 2024</small>
+                <p>Venture capital investments in startups reached a new record this quarter.</p>
+                <a href="#">Read more...</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        &copy; 2024 Global News Daily. All rights reserved.
+    </footer>
+</body>
+</html>
