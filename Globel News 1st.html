@@ -19,6 +19,7 @@
         .article {
             border:1px solid #ddd; border-radius:5px; padding:1rem; background:#f6f6ff;
         }
+        .article img{ border:1px solid #ddd; border-radius:5px;  background:#f6f6ff;}
         .article h2 { font-size: 1.2rem; margin-top:0; }
         .article small { color: #444; }
         footer { background: #223366; color: #ddd; text-align: center; padding: 1rem 2rem; margin-top: 2rem; }
@@ -50,27 +51,35 @@
         const news = [
             {
                 title: "Gold eases off two-week peak as dollar ticks up",
+                image: "https://image.cnbcfm.com/api/v1/image/108190046-1756095063176-gettyimages-2207832107-20090101250404-99-436525.jpeg?v=1756095107&w=1480&h=833&ffmt=webp&vtcrop=y",
                 author: "Mohit Pal",
                 date: "Aug 25, 2025",
-                summary: "Gold slipped on Monday from a near two-week high, as the dollar crept higher, although increased expectations of U.S. interest rate cuts following Federal Reserve Chair Jerome Powell’s dovish pivot last week lent some support to bullion."
+                summary: "Gold slipped on Monday from a near two-week high, as the dollar crept higher, although increased expectations of U.S. interest rate cuts following Federal Reserve Chair Jerome Powell’s dovish pivot last week lent some support to bullion.",
+                link: ""
             },
             {
                 title: "India will buy oil from wherever it gets",
+                image: "https://static.toiimg.com/thumb/msid-123486362,imgsize-83846,width-400,resizemode-4/123486362.jpg",
                 author: "Mohit pal",
                 date: "Aug 25, 2025",
-                summary: "NEW DELHI: India will continue purchasing oil “from wherever it gets the best deal,” even as the US imposes punitive tariffs in retaliation for New Delhi’s imports of Russian crude, India’s ambassador to Moscow, Vinay Kumar, told Russian news agency TASS on Sunday."
+                summary: "NEW DELHI: India will continue purchasing oil “from wherever it gets the best deal,” even as the US imposes punitive tariffs in retaliation for New Delhi’s imports of Russian crude, India’s ambassador to Moscow, Vinay Kumar, told Russian news agency TASS on Sunday.",
+                link: ""
             },
             {
                 title: "Bihar SIR: Received documents from 98.2% voters, says Election Commission of India",
+                image: "https://th-i.thgim.com/public/news/national/lyqn0p/article67936606.ece/alternates/LANDSCAPE_1200/NKV-ECI.jpg",
                 author: "Shubham Jha",
                 date: "Aug 25, 2025",
-                summary: "The poll body said it has received documents from 98.2% of the 7.24 crore electors in the State in 60 days. The remaining 1.8% voters have eight days to submit the requisite documents that were not provided during enumeration, and to rectify mistakes in the draft electoral rolls published on August 1. The ECI said that 1.64% electors submitted documents per day."
+                summary: "The poll body said it has received documents from 98.2% of the 7.24 crore electors in the State in 60 days. The remaining 1.8% voters have eight days to submit the requisite documents that were not provided during enumeration, and to rectify mistakes in the draft electoral rolls published on August 1. The ECI said that 1.64% electors submitted documents per day.",
+                link: ""
             },
             {
                 title: "ISRO Validates Parachute-Based Deceleration System for Gaganyaan with IADT-01 Near Sriharikota",
+                image: "https://media.assettype.com/outlookbusiness/2025-08-25/oi1qb4rj/hh.jpg?w=640&auto=format%2Ccompress&fit=max&format=webp&dpr=1.0",
                 author: "Mohit Pal",
                 date: "Aug 25, 2025",
-                summary: "The Integrated Air Drop Test (IADT-01) performed by ISRO on Sunday near Sriharikota marks an essential step in the system-level qualification of the parachute-based deceleration system for the Gaganyaan programme, ISRO has said."
+                summary: "The Integrated Air Drop Test (IADT-01) performed by ISRO on Sunday near Sriharikota marks an essential step in the system-level qualification of the parachute-based deceleration system for the Gaganyaan programme, ISRO has said.",
+                link: ""
             }
         ];
 
@@ -80,15 +89,17 @@
             el.className = 'article';
             el.innerHTML = `
                 <h2>${article.title}</h2>
+                <img src="${article.image}" height="auto" width="100%" alt="${article.Brkimg}" style="border-radius: 4px;">
                 <small>By ${article.author} | ${article.date}</small>
                 <p>${article.summary}</p>
-                <a href="#">Credits...</a>
+                <a href="${article.link}">Read more...</a>
             `;
             newsList.appendChild(el);
         });
     </script>
 </body>
 </html>
+
 
 
 
